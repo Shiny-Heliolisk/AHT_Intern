@@ -114,7 +114,9 @@
 
 .cart-inside {
     display: flex;
-    float: right;
+    /* float: right; */
+    justify-content: flex-end;
+    margin: 0px 17px;
 }
 
 .cart-inside a {
@@ -133,4 +135,51 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+.banners{
+    display: flex;
+}
+.banner-right img{
+    margin: 30px 1px 1px 30px;
+}
+.banner-left img{
+    margin: 30px 0px 1px 6px;
+}
+.banner-left{
+    position: relative;
+}
+.shop-now{
+    width: 106px;
+    height: 40px;
+    position: absolute;
+}
+.shop-now-position_1{
+    top: 406px;
+    left: 557px;
+}
+.shop-now-position_2{
+    top: 217px;
+    left: 75px;
+}
+.shop-now a{
+    width: 106px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #8262b5;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: "Montserrat";
+    padding: 11px 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.shop-now a:hover{
+    text-decoration: none;
+    color: wheat;
+}
+.banner-right-bot{
+    position: relative;
+}
+.banner-right-bot> .shop-now a{
+    padding: 11px 16px;
 }
