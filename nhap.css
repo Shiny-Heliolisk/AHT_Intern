@@ -1,28 +1,31 @@
 * {
-    margin: 0;
+    margin : 0;
     padding: 0;
 }
+
 .wrap {
-    width: 100%;
-    max-width: 1920px;
-    height: auto;
-    padding: 0%;
+    width       : 100%;
+    max-width   : 1920px;
+    height      : auto;
+    margin-left : auto;
+    margin-right: auto;
 }
 
 .menu {
-    width: 100%;
-    height: 125px;
+    min-width    : 100%;
+    height       : 125px;
     border-bottom: solid 1px #dddddd;
 }
 
 .header {
-    height: 46px;
+    width           : 100%;
+    height          : 46px;
     background-color: #222222;
-    display: flex;
+    display         : flex;
 }
 
 .header-left {
-    width: 50%;
+    width     : 50%;
     text-align: left;
 }
 
@@ -32,7 +35,7 @@
 
 .header-left p {
     font-size: 15px;
-    color: #525252;
+    color    : #525252;
 }
 
 .header-right {
@@ -40,9 +43,8 @@
 }
 
 .header-right-inside {
-    float: right;
+    float  : right;
     display: flex;
-    margin: 1px 1px;
 }
 
 .header-right i {
@@ -50,38 +52,38 @@
 }
 
 .header-right a {
-    font-size: 15px;
-    color: #525252;
+    font-size      : 15px;
+    color          : #525252;
     text-decoration: none;
-    padding: 0px 0px;
-    margin: 10px 29px 10px 0px;
+    padding        : 0px 0px;
+    margin         : 10px 29px 10px 0px;
 }
 
 .header-right a:hover {
     text-decoration: none;
-    color: wheat;
+    color          : wheat;
 }
 
 .main-menu {
     display: flex;
-    width: 100%;
+    width  : 100%;
 }
 
 .logo {
     width: 20%;
 }
-.logo img{
+
+.logo img {
     margin: 20px 30px;
 }
+
 .nav {
-    width: 60%;
-    display: block;
+    width: 1140px;
 }
 
 .nav ul {
     display: flex;
-    margin-top: 26px;
-    margin-left: 132px;
+    margin : auto;
 }
 
 .nav ul li {
@@ -89,19 +91,20 @@
 }
 
 .nav ul li a {
-    font-size: 14px;
-    color: #000000;
-    text-transform: uppercase;
+    font-size      : 14px;
+    color          : #000000;
+    text-transform : uppercase;
     text-decoration: none;
-    cursor: pointer;
-    font-weight: 700;
-    font-family: "Montserrat";
-    padding: 0px 27px;
+    cursor         : pointer;
+    font-weight    : 700;
+    padding        : 25px 27px;
+    max-width      : 12.5%;
+    box-sizing     : border-box;
 }
 
 .nav ul li a:hover {
     text-decoration: none;
-    color: #8262b5;
+    color          : #8262b5;
 }
 
 .nav ul li i {
@@ -113,73 +116,232 @@
 }
 
 .cart-inside {
-    display: flex;
-    /* float: right; */
+    display        : flex;
+    /* float       : right; */
     justify-content: flex-end;
-    margin: 0px 17px;
+    margin         : 0px 17px;
 }
 
 .cart-inside a {
     text-decoration: none;
-    margin: 29px 14px;
-    color: #000000;
+    margin         : 29px 14px;
+    color          : #000000;
 }
-.cart-inside i{
+
+.cart-inside i {
     font-size: 25px;
 }
+
 .cart-inside a:hover {
     text-decoration: none;
-    color: #8262b5;
+    color          : #8262b5;
 }
-.content{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+
+.content {
+    max-width : 1920px;
+    margin-top: 30px;
 }
-.banners{
-    display: flex;
+
+.banners {
+    max-width    : 1140px;
+    margin-left  : auto;
+    margin-right : auto;
+    display      : flex;
+    margin-bottom: 80px;
 }
-.banner-right img{
-    margin: 30px 1px 1px 30px;
+
+.banner-left {
+    position    : relative;
+    margin-right: 30px;
 }
-.banner-left img{
-    margin: 30px 0px 1px 6px;
-}
-.banner-left{
-    position: relative;
-}
-.shop-now{
-    width: 106px;
-    height: 40px;
+
+.shop-now {
+    width   : 106px;
+    height  : 40px;
     position: absolute;
 }
-.shop-now-position_1{
-    top: 406px;
+
+.shop-now-position_1 {
+    top : 406px;
     left: 557px;
 }
-.shop-now-position_2{
-    top: 217px;
+
+.shop-now-position_2 {
+    top : 217px;
     left: 75px;
 }
-.shop-now a{
-    width: 106px;
-    height: 40px;
-    color: #ffffff;
+
+.shop-now a {
+    width           : 106px;
+    height          : 40px;
+    color           : #ffffff;
     background-color: #8262b5;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-family: "Montserrat";
-    padding: 11px 16px;
-    text-align: center;
-    box-sizing: border-box;
+    text-transform  : capitalize;
+    font-size       : 14px;
+    padding         : 11px 16px;
+    text-align      : center;
+    box-sizing      : border-box;
 }
-.shop-now a:hover{
+
+.shop-now a:hover {
     text-decoration: none;
-    color: wheat;
+    color          : wheat;
 }
-.banner-right-bot{
-    position: relative;
+
+.banner-right-bot {
+    position  : relative;
+    margin-top: 30px;
 }
-.banner-right-bot> .shop-now a{
+
+.banner-right-bot>.shop-now a {
     padding: 11px 16px;
+}
+
+.main-content {
+    width       : 1140px;
+    height      : 1068px;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.title {
+    height: 100px;
+}
+
+.franco {
+    font-size     : 12px;
+    font-weight   : bold;
+    letter-spacing: 4px;
+    color         : #8262b5;
+    text-transform: uppercase;
+}
+
+.featured-items {
+    font-size     : 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color         : #000000;
+    font-weight   : 700;
+    margin-top    : 20px;
+    margin-bottom : 30px;
+}
+
+.line {
+    width           : 50px;
+    height          : 1px;
+    background-color: #8262b5;
+}
+
+.products {
+    margin-top   : 25px;
+    margin-bottom: 80px;
+}
+
+.products-line-1 {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.products-line-2 {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size  : 14px;
+    line-height: 26px;
+    color      : #000000;
+    font-weight: 400;
+}
+
+.old {
+    font-size      : 16px;
+    line-height    : 26px;
+    color          : #999999;
+    text-decoration: line-through;
+}
+
+.new {
+    color      : #8262b5;
+    font-size  : 16px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.blog {
+
+    height          : 708px;
+    background-image: url("background.jpg");
+}
+
+.blog-title {
+    text-align    : center;
+    text-transform: uppercase;
+}
+
+.blog-title .latest {
+    font-size     : 12px;
+    letter-spacing: 6px;
+    color         : #8262b5;
+    font-weight   : 700;
+    text-align    : center;
+}
+
+.blog-title .news-events {
+    font-size     : 24px;
+    letter-spacing: 2px;
+    color         : #000000;
+    font-weight   : 700;
+    text-align    : center;
+}
+
+.title-line {
+    width           : 50px;
+    height          : 1px;
+    background-color: #8262b5;
+    margin-left     : auto;
+    margin-right    : auto;
+}
+
+.blog-contents {
+    margin-top     : 45px;
+    width          : 1140px;
+    margin-left    : auto;
+    margin-right   : auto;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.blog-content {
+    width           : 360px;
+    background-color: #ffffff;
+}
+
+.content-margin {
+    margin: 20px;
+}
+
+.blog-content a {
+    color      : #000000;
+    font-size  : 16px;
+    line-height: 20px;
+}
+
+.blog-content a:hover {
+    text-decoration: none;
+    color          : #8262b5;
+}
+
+.blog-content-description {
+    font-size  : 14px;
+    line-height: 22px;
+    color      : #424242;
+    font-weight: 400;
+
+}
+
+.footer {
+    width           : 100%;
+    height          : 415px;
+    background-color: rgba(34, 34, 34, 255);
 }
