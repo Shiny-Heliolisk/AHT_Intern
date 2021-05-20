@@ -10,7 +10,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="nhap.js"></script>
     <title>Franco</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#dropdown1").click(function () {
+                $("#open1").toggle(1000);
+                $("#dropdown1").toggleClass("rotate");
 
+            });
+            $("#dropdown2").click(function () {
+                $("#open2").toggle(1000);
+                $("#dropdown2").toggleClass("rotate");
+            });
+            $("#dropdown3").click(function () {
+                $("#open3").toggle(1000);
+                $("#dropdown3").toggleClass("rotate");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -76,7 +93,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="content">
             <div class="banners">
                 <div class="banner-left">
@@ -315,8 +332,9 @@
                 <div class="column-besides column-left">
                     <div class="footer-main-title">
                         about franco
+                        <i id="dropdown1" class="fas fa-chevron-circle-down"></i>
                     </div>
-                    <div class="footer-main-links">
+                    <div id="open1" class="footer-main-links">
                         <p>
                             Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
                             lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum.
@@ -332,8 +350,9 @@
                 <div class="column-mid">
                     <div class="footer-main-title">
                         navigation
+                        <i id="dropdown2" class="fas fa-chevron-circle-down"></i>
                     </div>
-                    <div class="footer-main-links flex">
+                    <div id="open2" class="footer-main-links flex">
                         <div class="links-left">
                             <ul>
                                 <li><a href="#">home</a></li>
@@ -359,8 +378,9 @@
                 <div class="column-besides column-right">
                     <div class="footer-main-title">
                         shop location
+                        <i id="dropdown3" class="fas fa-chevron-circle-down"></i>
                     </div>
-                    <div class="footer-main-links">
+                    <div id="open3" class="footer-main-links">
 
                         <table class="config">
                             <tr>
