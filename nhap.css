@@ -531,6 +531,7 @@ html {
     color: #888888;
     font-size: 14px;
     margin: 23px 0px;
+    display: block;
 }
 
 .flex {
@@ -630,16 +631,18 @@ table td {
     height: 0;
     width: 100%;
     z-index: 1;
-    position: absolute;
+    position: sticky;
     background-color: #111;
     opacity: 0.7;
     overflow-x: hidden;
     transition: 0.5s;
     text-align: center;
 }
+
 .open {
     height: 500px;
 }
+
 .sidenav li {
     list-style: none;
 }
@@ -687,7 +690,12 @@ table td {
     width: 33.33%;
     justify-content: center;
 }
-
+.footer-main-title i{
+    display: none;
+}
+.hide-show{
+    display: flex;
+}
 @media screen and (max-width:1329px) {
     .main-menu .logo {
         display: none;
@@ -784,7 +792,34 @@ table td {
 
 @media screen and (max-width:885px) {
     .footer-main {
-        display: block;
         margin-left: 1%;
+        padding-top: 0;
+    }
+
+    .footer-main-links {
+        display: none;
+    }
+    .column-besides{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .column-mid{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .footer-main-title i{
+        display: inline-table;
+    }
+    /* .hide-show{
+        display: flex;
+        justify-content: flex-start;
+        transition: 0.5s;
+    } */
+    .footer-main-title i{
+        transition: 1s;
+    }
+    .rotate{
+        transform: rotate(-90deg);
+        
     }
 }
